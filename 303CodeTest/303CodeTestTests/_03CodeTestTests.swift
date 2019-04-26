@@ -20,14 +20,14 @@ class _03CodeTestTests: XCTestCase {
         let person = PersonObject(dictionary: dict as NSDictionary)
         XCTAssertEqual(person.cityString, "Hopatcong")
         XCTAssertEqual(person.firstNameString, "Vaibhavi")
-        XCTAssertEqual(person.lasntNameString, "Lawson")
+        XCTAssertEqual(person.lastNameString, "Lawson")
     }
     
     func testJsonProcessing() {
         peopleVc.processJson()
         let person = Constants.personArray[0]
         XCTAssertEqual(person.firstNameString, "Maly")
-        XCTAssertEqual(person.lasntNameString, "Elmuccio")
+        XCTAssertEqual(person.lastNameString, "Elmuccio")
         XCTAssertEqual(person.cityString, "Pawtucket")
     }
 

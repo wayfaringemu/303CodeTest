@@ -9,10 +9,10 @@
 import UIKit
 
 class PersonObject: NSObject {
-    var firstNameString, lasntNameString, cityString : String?
+    var firstNameString, lastNameString, cityString : String?
     init(dictionary: NSDictionary) {
         firstNameString = dictionary["fname"] as? String
-        lasntNameString = dictionary["lname"] as? String
+        lastNameString = dictionary["lname"] as? String
         cityString = dictionary["city"] as? String
     }
 }

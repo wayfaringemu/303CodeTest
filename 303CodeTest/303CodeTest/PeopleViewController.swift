@@ -80,7 +80,7 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell") as? PersonCell, let lastName = Constants.personArray[indexPath.row].lasntNameString {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell") as? PersonCell, let lastName = Constants.personArray[indexPath.row].lastNameString {
             cell.lastNameLabel.text = "\(lastName),"
             cell.firstNameLabel.text = Constants.personArray[indexPath.row].firstNameString
             cell.cityLabel.text = Constants.personArray[indexPath.row].cityString
